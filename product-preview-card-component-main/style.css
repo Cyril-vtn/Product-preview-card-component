@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+/* ROOT COLOR*/
+
+:root {
+  --primary-color-green: hsl(158, 36%, 37%);
+  --primary-color-white: hsl(30, 38%, 92%);
+  --secondary-color-dark: hsl(212, 21%, 14%);
+  --secondary-color-grey: hsl(228, 12%, 48%);
+  --secondary-color-white: hsl(0, 0%, 100%);
+}
+
+/* ------ ALL SCREEN -------*/
+body {
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: var(--primary-color-white);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.card-content {
+  display: flex;
+  height: 500px;
+  width: 650px;
+  background-color: var(--secondary-color-white);
+  border-radius: 8px;
+}
+
+/* img de gauche*/
+.img {
+  border-radius: 8px 0 0 8px;
+}
+
+/* text de droite*/
+.text-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: space-around;
+}
+
+.perfume {
+  font-family: monstercat, sans-serif;
+  letter-spacing: 0.4rem;
+  color: var(--secondary-color-grey);
+  font-size: 0.8rem;
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: Fraunces, sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+h2 {
+  font-family: monstercat, sans-serif;
+  color: var(--secondary-color-grey);
+  font-size: medium;
+  padding-top: 10px;
+  line-height: 1.8rem;
+  padding-right: 30px;
+  margin: 0;
+}
+
+/* Div pour setup prix en ligne*/
+.prix {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* PRIX GROS VERT PROMO*/
+.prix1 {
+  color: var(--primary-color-green);
+  font-family: Fraunces, sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* PRIX BARRE*/
+.prix2 {
+  font-family: monstercat, sans-serif;
+  text-decoration: line-through;
+}
+
+/* BOUTON AJOUT PANIER*/
+.addCart {
+  display: flex;
+  flex-direction: row;
+  color: var(--secondary-color-white);
+  background-color: var(--primary-color-green);
+  margin: 0 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-family: monstercat, sans-serif;
+}
+/* changement de couleur quand hover*/
+.addCart:hover {
+  background-color: var(--secondary-color-dark);
+  transition: all 0.2s ease-in;
+}
+
+.addtext {
+  font-size: 1rem;
+  font-weight: 700;
+}
